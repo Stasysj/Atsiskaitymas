@@ -1,6 +1,10 @@
 @import "reset.css";
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  font-family: "Inter", sans-serif;
+  color: #777777;
+}
 
 .container {
   margin: 0px auto;
@@ -110,4 +114,74 @@
 }
 .press-img-4 {
   display: none;
+}
+/* ----------------Cards-------------------- */
+.showcase-title {
+  font-size: 40px;
+  line-height: 48.5px;
+  font-weight: 500;
+  color: #111111;
+  margin-bottom: 16px;
+}
+.showcase-subtitle {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #111111;
+  margin-bottom: 40px;
+}
+.showcase-container {
+}
+.card-box {
+  display: flex;
+  flex-direction: row;
+
+  column-gap: 40px;
+  overflow: hidden;
+}
+.card {
+  width: 290px;
+  height: 400px;
+  border-radius: 16px;
+
+  background-color: #eeeeee;
+}
+
+.card-box-text {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: row;
+  padding: 16px 24px 24px;
+  justify-content: space-between;
+}
+.card-box-text-right {
+  text-align: right;
+}
+.card-box-text-left {
+  text-align: left;
+}
+
+.cbt-1line-left {
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #ff8139;
+}
+.cbt-1line-right {
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 500;
+}
+.cbt-2line {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 500;
+  color: #111111;
+}
+.cbt-3line {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
 }
