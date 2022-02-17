@@ -1,1 +1,31 @@
 @import "reset.css";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* --------------Header----------------- */
+.container {
+    margin: 0px auto ;
+    padding-left: 32px;
+    padding-right: 32px;
+    max-width: 1350px;
+  }
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aquamarine;
+    margin-bottom: 80px;
+    padding-top: 32px;
+    
+  }
+  .header-logo {
+    height: 36px;
+  }
+  .nav-element-4 {
+    color: #ff3998;
+  }
+  .nav-burger {
+  }
+  .nav-element {
+    display: none;
