@@ -34,35 +34,41 @@
   display: none;
 }
 /* --------------Hero------------------- */
-.hero-container {
+.signup-container {
   display: flex;
   flex-direction: row;
   overflow: hidden;
   margin-bottom: 80px;
 }
-.hero-img {
+.signup-img-1 {
   min-width: 250px;
 }
-.hero-text-box {
+.signup-text-box-2 {
+  min-width: 207px;
+}
+.signup-text-box {
   min-width: 274px;
   max-height: 519px;
 }
-.hero-s-tite {
+.signup-s-tite {
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
   color: #ff3998;
+  margin-bottom: 24px;
 }
-.hero-title {
+.signup-title {
   font-size: 48px;
   line-height: 58px;
   font-weight: 900;
   color: #111111;
+  margin-bottom: 24px;
 }
-.hero-paragraph {
+.signup-paragraph {
   font-size: 20px;
   line-height: 30px;
   font-weight: 400;
+  margin-bottom: 20px;
 }
 .button {
   background-color: transparent;
@@ -74,7 +80,6 @@
   font-size: 20px;
   line-height: 30px;
   font-weight: 600;
-  margin-top: 20px;
 }
 /* ---------------------offer--------------- */
 
@@ -135,6 +140,7 @@
 .card-box {
   display: flex;
   flex-direction: row;
+  margin-bottom: 92px;
 
   column-gap: 40px;
   overflow: hidden;
