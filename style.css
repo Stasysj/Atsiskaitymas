@@ -5,17 +5,9 @@
   font-family: "Inter", sans-serif;
   color: #777777;
 }
-body {
-  /* background-color: #eeeeee; */
-}
-.page {
-  /* border-radius: 25px;
-  background-color: snow; */
-}
 .container {
   margin: 0px auto;
   padding-left: 32px;
-  /* padding-right: 32px; */
   max-width: 1350px;
 }
 /* --------------Header----------------- */
@@ -24,7 +16,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* background-color: aquamarine; */
   margin-bottom: 80px;
   padding-top: 32px;
   padding-right: 32px;
@@ -32,14 +23,17 @@ body {
 .header-logo {
   height: 36px;
 }
+.nav-element {
+  display: none;
+  height: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #555555;
+}
 .nav-element-4 {
   color: #ff3998;
 }
-.nav-burger {
-}
-.nav-element {
-  display: none;
-}
+
 /* --------------Hero------------------- */
 .signup-container {
   display: flex;
@@ -51,14 +45,14 @@ body {
   display: flex;
   flex-direction: row;
   overflow: hidden;
-  margin-bottom: 0px;
 }
 
 .signup-img-1 {
   min-width: 250px;
+  max-width: 651px;
 }
 .signup-text-box-2 {
-  min-width: 207px;
+  min-width: 220px;
 }
 .signup-text-box {
   min-width: 274px;
@@ -73,17 +67,27 @@ body {
   margin-bottom: 24px;
 }
 .signup-title {
+  font-size: 48px;
+  line-height: 59px;
+  font-weight: 900;
+  color: #111111;
+  margin-bottom: 24px;
+}
+.signup-title-2 {
   font-size: 56px;
   line-height: 68px;
   font-weight: 900;
   color: #111111;
   margin-bottom: 24px;
 }
+
 .signup-paragraph {
   font-size: 20px;
   line-height: 30px;
   font-weight: 400;
   margin-bottom: 32px;
+  color: #555555;
+  margin-bottom: 35px;
 }
 
 /* ------------------button----- */
@@ -190,7 +194,6 @@ body {
 }
 
 .card-box-text {
-  /* width: 100%; */
   display: flex;
   flex-direction: row;
   padding: 16px 24px 24px;
@@ -227,6 +230,7 @@ body {
   line-height: 30px;
   font-weight: 400;
 }
+
 /* ---------------footer------------- */
 .footer-logo-container {
   display: flex;
@@ -304,4 +308,86 @@ body {
   height: 2px;
   background-color: #eeeeee;
   margin-bottom: 64px;
+}
+/* --------------------------------- */
+/* ------------Media 768-------------------- */
+@media screen and (min-width: 768px) {
+  .nav-element {
+    display: initial;
+  }
+  .nav-burger {
+    display: none;
+  }
+  /* -------------------Press----------- */
+  .press-container {
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
+  .press-img {
+    width: 90%;
+  }
+  .card-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 90px;
+  }
+  .card {
+    justify-content: center;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .footer-logo-container {
+    flex-basis: 33%;
+  }
+  .footer-about-nft {
+    flex-basis: 33%;
+  }
+  .footer-contact-social {
+    flex-basis: 33%;
+  }
+  .footer-copyright {
+    flex-basis: 100%;
+  }
+  .footer-logo-txt {
+    margin-bottom: 0px;
+  }
+  .footer-copyright-txt {
+    margin-bottom: 50px;
+  }
+}
+/* --------------------------------- */
+/* ------------Media 1440-------------------- */
+@media screen and (min-width: 1440px) {
+  .press-img-4 {
+    display: initial;
+  }
+
+  .signup-title {
+    font-size: 96px;
+    line-height: 116px;
+  }
+  .signup-text-box-2 {
+    width: 850px;
+  }
+  .signup-container {
+    margin-bottom: 0px;
+  }
+  .card-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 25px;
+  }
+  .footer-logo-container {
+    flex-basis: 50%;
+  }
+  .footer-about-nft {
+    flex-basis: 25%;
+  }
+  .footer-contact-social {
+    flex-basis: 25%;
+    padding-left: 0px;
+  }
 }
