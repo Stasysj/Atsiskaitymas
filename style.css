@@ -29,6 +29,7 @@
   line-height: 20px;
   font-weight: 400;
   color: #555555;
+  padding-left: 28px;
 }
 .nav-element-4 {
   color: #ff3998;
@@ -376,7 +377,6 @@
     margin-bottom: 0px;
   }
   .card-box {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     row-gap: 25px;
   }
